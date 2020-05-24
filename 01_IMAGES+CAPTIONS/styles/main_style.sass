@@ -1,0 +1,28 @@
+
+
+
+
+.SMALL-NEWS-LINE
+	display: flex
+	flex-direction: row /*horizontally align*/
+	justify-content: space-between /*space between left and right no space*/
+
+.ARTICLE
+	position: relative /*make it movable by flex*/
+	width: 30% /*width 30% of parent class ARTICLE*/
+	min-width: 200px /*prevent of getting too small*/
+
+.ARTICLE img
+	width: 100% /*image size to 100% of paernt class IMAGE*/
+
+.IMAGE-CAPTION
+	display: flex
+	align-items: center 
+	position: absolute /*position absolute in parent class IMAGE*/
+	bottom: 0 /*position at bottom of parent class IMAGE averlap the IMAGE*/
+	background-color: black
+	color: white
+	width: 100% /*width 100% of IMAGE*/
+	min-height: 60px /*prevent box to get too small*/
+	font-size: 1em
+	font-weight: 700

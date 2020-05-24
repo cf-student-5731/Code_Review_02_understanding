@@ -1,0 +1,26 @@
+.SMALL-NEWS-LINE {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.ARTICLE {
+  position: relative;
+  width: 30%;
+  min-width: 200px; }
+
+.ARTICLE img {
+  width: 100%; }
+
+.IMAGE-CAPTION {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  background-color: black;
+  color: white;
+  width: 100%;
+  min-height: 60px;
+  font-size: 1em;
+  font-weight: 700; }
+
+/*# sourceMappingURL=main_style.css.map */
