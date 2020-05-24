@@ -1,7 +1,18 @@
 
+/*some variables fpr placing items*/
+$main_margin: 20px
+$standard_space: 15px
+
+*
+	margin: 0
+
+.WRAPPER-MAIN
+	margin: $main_margin $main_margin 0 $main_margin /*space on top-right-bottom-left*/
+
+
 .BANNER_02
 	display: flex
-	justify-content: space-around /*centers the image in parent BODY*/
+	justify-content: space-around /*centers the image in parent*/
 	margin-top: 20px /*some space on top*/
 
 .BANNER_02 img
@@ -9,7 +20,7 @@
 	height: 100% /*height 100% of parent class BANNER_02*/
 
 .BANNER_01
-	width: 10% /*width 10% of parent class WRAPPER_small-news-block*/
+	width: 10% /*width 10% of parent class WRAPPER_small-news-block SMALL-NEWS-BLOCK has 90% */
 
 .BANNER_01 img
 	width: 100% /*width 100% of parent class BANNER_01*/
@@ -17,8 +28,7 @@
 
 .WRAPPER_small-news-block
 	display: flex /*container for SMALL-NEWS-BLOCK*/
-	margin-top: 10px /*add some free space on top*/
-	width: 100% /*width 100% of parent BODY*/
+	width: 100% /*width 100% of parent*/
 
 .TEXT-LINE
 	display: flex
@@ -28,12 +38,15 @@
 	height: 1.5em
 	font-size: 1.5em
 	padding-left: 0.5em /*move text a little to the right*/
+	margin-top: $standard_space /*space on top for both text lines*/
+	margin-bottom: $standard_space /*space on bottom for both text lines*/
 
 .SMALL-NEWS-BLOCK
-	width: 80% /*width 80% of parent*/
+	width: 90% /*width 90% of parent right banner gets 10%*/
 	display: flex
 	flex-direction: column /*vertically align*/
 	justify-content: space-between /*space between top and bottom no space*/
+	margin-right: 15px /*space between small news-block and right banner*/
 
 .SMALL-NEWS-LINE
 	display: flex
@@ -44,6 +57,7 @@
 	position: relative /*make it movable by flex*/
 	width: 30% /*width 30% of parent class ARTICLE*/
 	min-width: 200px /*prevent of getting too small*/
+
 
 .ARTICLE img
 	width: 100% /*image size to 100% of parent class IMAGE*/
