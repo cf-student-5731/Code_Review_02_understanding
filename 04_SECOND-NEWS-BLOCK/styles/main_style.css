@@ -1,0 +1,110 @@
+/*some variables fpr placing items */
+* {
+  margin: 0; }
+
+.BANNER_03 {
+  width: 10%;
+  margin-top: 15px; }
+
+.BANNER_03 img {
+  width: 100%;
+  height: 100%; }
+
+.WRAPPER_BIG-news-block {
+  display: flex;
+  width: 100%; }
+
+.BIG-NEWS-BLOCK {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 15px; }
+
+.BIG-NEWS-LINE {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 15px; }
+
+.ARTICLE_02 {
+  position: relative;
+  width: 49%;
+  min-width: 300px; }
+
+.ARTICLE_02 img {
+  width: 100%; }
+
+/*---------------------------------------------------------------------------------- */
+.WRAPPER-MAIN {
+  margin: 20px 20px 0 20px; }
+
+/*---------------------------------------------------------------------------------- */
+.BANNER_02 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px; }
+
+.BANNER_02 img {
+  width: 90%;
+  height: 100%; }
+
+.BANNER_01 {
+  width: 10%; }
+
+.BANNER_01 img {
+  width: 100%;
+  height: 100%; }
+
+.WRAPPER_small-news-block {
+  display: flex;
+  width: 100%; }
+
+.TEXT-LINE {
+  display: flex;
+  align-items: center;
+  color: #4C4C4C;
+  background-color: #DDDDDD;
+  height: 1.5em;
+  font-size: 1.5em;
+  padding-left: 0.5em;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+.SMALL-NEWS-BLOCK {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 15px; }
+
+.SMALL-NEWS-LINE {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.ARTICLE {
+  position: relative;
+  width: 30%;
+  min-width: 200px; }
+
+.ARTICLE img {
+  width: 100%; }
+
+.IMAGE-CAPTION {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  background-color: black;
+  color: white;
+  width: 100%;
+  min-height: 60px;
+  font-size: 0.5em;
+  font-weight: bold; }
+
+.IMAGE-CAPTION p {
+  padding-left: 0.5em;
+  font-size: 1.5em; }
+
+/*# sourceMappingURL=main_style.css.map */
