@@ -1,0 +1,43 @@
+/*SWITCH THE LAYOUT AT BREAKING POINT OF 800px WIDTH*/
+
+/*some variables fpr placing items*/
+$main_margin: 20px
+$standard_space: 15px
+
+@media screen and (max-width: 800px)
+
+
+	.WRAPPER_small-news-block, .WRAPPER_BIG-news-block
+		justify-content: center
+
+	.SMALL-NEWS-BLOCK, .BIG-NEWS-BLOCK
+		width: 100%
+		margin-right: 0
+	
+	.ARTICLE_02
+		display: none
+
+	.BIG-NEWS-LINE
+		margin-top: 0
+
+	.TEXT-LINE
+		margin-bottom: 0
+
+	.ARTICLE_RESPONSIVE
+		display: inline /*make the FSWD visible*/
+
+	.SMALL-NEWS-LINE
+		flex-flow: wrap /*wrap objects instead of row*/
+
+	.ARTICLE, .ARTICLE_02, .ARTICLE_RESPONSIVE
+		position: relative /*make it movable by flex*/
+		width: 47% /*width 49% of parent class BIG-NEWS-LINE*/
+		min-width: 300px /*prevent of getting too small*/
+		margin-top: $standard_space
+		min-width: 0px /*remove min-width*/
+
+	.BANNER_01, .BANNER_02, .BANNER_03
+		display: none
+
+
+

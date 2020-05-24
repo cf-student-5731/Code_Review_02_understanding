@@ -1,0 +1,36 @@
+/*SWITCH THE LAYOUT AT BREAKING POINT OF 800px WIDTH */
+/*some variables fpr placing items */
+@media screen and (max-width: 800px) {
+  .WRAPPER_small-news-block, .WRAPPER_BIG-news-block {
+    justify-content: center; }
+
+  .SMALL-NEWS-BLOCK, .BIG-NEWS-BLOCK {
+    width: 100%;
+    margin-right: 0; }
+
+  .ARTICLE_02 {
+    display: none; }
+
+  .BIG-NEWS-LINE {
+    margin-top: 0; }
+
+  .TEXT-LINE {
+    margin-bottom: 0; }
+
+  .ARTICLE_RESPONSIVE {
+    display: inline; }
+
+  .SMALL-NEWS-LINE {
+    flex-flow: wrap; }
+
+  .ARTICLE, .ARTICLE_02, .ARTICLE_RESPONSIVE {
+    position: relative;
+    width: 47%;
+    min-width: 300px;
+    margin-top: 15px;
+    min-width: 0px; }
+
+  .BANNER_01, .BANNER_02, .BANNER_03 {
+    display: none; } }
+
+/*# sourceMappingURL=media_query.css.map */

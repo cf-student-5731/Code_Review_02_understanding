@@ -1,0 +1,146 @@
+/*some variables fpr placing items*/
+$main_margin: 20px
+$standard_space: 15px
+
+
+/*IMPORT MEDIA QUERIES AT BOTTOM OF FILE TO LET THEM OVERWRITE EXISING VALUES*/
+
+
+.ARTICLE_RESPONSIVE
+	position: relative /*make it movable by flex*/
+	width: 47% /*width 30% of parent class SMALL-NEWS-LINE*/
+	min-width: 300px /*prevent of getting too small*/
+	display: none /*do not display this, needed for mobile layout*/
+
+.ARTICLE_RESPONSIVE img
+	width: 100% /*image size to 100% of parent class IMAGE*/
+
+/*----------------------------------------------------------------------------------*/
+ /*----------------------------------------------------------------------------------*/
+
+
+*
+	margin: 0 /*remove predefined margins from all tags*/
+
+
+
+.BANNER_03
+	width: 10% /*width 10% of parent class WRAPPER_small-news-block SMALL-NEWS-BLOCK has 90% */
+	margin-top: $standard_space /*space on top of banner_03 same as both news lines*/
+
+.BANNER_03 img
+	width: 100% /*width 100% of parent class BANNER_01*/
+	height: 100% /*height 100% of parent class BANNER_01*/
+
+.WRAPPER_BIG-news-block
+	display: flex /*container for SMALL-NEWS-BLOCK*/
+	width: 100% /*width 100% of parent*/
+
+
+.BIG-NEWS-BLOCK
+	width: 90% /*width 90% of parent right banner gets 10%*/
+	display: flex
+	flex-direction: column /*vertically align*/
+	justify-content: space-between /*space between top and bottom no space*/
+	margin-right: 15px /*space between small news-block and right banner*/
+
+
+.BIG-NEWS-LINE
+	display: flex
+	flex-direction: row /*horizontally align*/
+	justify-content: space-between /*space between left and right no space*/
+	margin-top: $standard_space /*space on top of both news lines same as banner_03*/
+
+
+.ARTICLE_02
+	position: relative /*make it movable by flex*/
+	width: 47% /*width 49% of parent class BIG-NEWS-LINE*/
+	min-width: 300px /*prevent of getting too small*/
+
+.ARTICLE_02 img
+	width: 100% /*image size to 100% of parent class IMAGE*/
+
+
+
+
+/*----------------------------------------------------------------------------------*/
+
+.WRAPPER-MAIN
+	margin: $main_margin $main_margin 0 $main_margin /*space on top-right-bottom-left*/
+
+/*----------------------------------------------------------------------------------*/
+
+
+
+
+.BANNER_02
+	text-align: center
+	margin-top: 20px /*some space on top*/
+	/*removed flex because display:none does not work in media-query on flex elements*/
+	/*	display: flex*/
+	/*	justify-content: space-around centers the image in parent*/
+
+.BANNER_02 img
+	width: 90% /*width 90% of parent class BANNER_02*/
+	height: 100% /*height 100% of parent class BANNER_02*/
+
+.BANNER_01
+	width: 10% /*width 10% of parent class WRAPPER_small-news-block SMALL-NEWS-BLOCK has 90% */
+
+.BANNER_01 img
+	width: 100% /*width 100% of parent class BANNER_01*/
+	height: 100% /*height 100% of parent class BANNER_01*/
+
+.WRAPPER_small-news-block
+	display: flex /*container for SMALL-NEWS-BLOCK*/
+	width: 100% /*width 100% of parent*/
+
+.TEXT-LINE
+	display: flex
+	align-items: center /*align text vertically centered*/
+	color: #4C4C4C
+	background-color: #DDDDDD
+	height: 1.5em
+	font-size: 1.5em
+	padding-left: 0.5em /*move text a little to the right*/
+	margin-top: $standard_space /*space on top for both text lines*/
+	margin-bottom: $standard_space /*space on bottom for both text lines*/
+
+.SMALL-NEWS-BLOCK
+	width: 90% /*width 90% of parent right banner gets 10%*/
+	display: flex
+	flex-direction: column /*vertically align*/
+	justify-content: space-between /*space between top and bottom no space*/
+	margin-right: 15px /*space between small news-block and right banner*/
+
+.SMALL-NEWS-LINE
+	display: flex
+	flex-direction: row /*horizontally align*/
+	justify-content: space-between /*space between left and right no space*/
+
+.ARTICLE
+	position: relative /*make it movable by flex*/
+	width: 30% /*width 30% of parent class SMALL-NEWS-LINE*/
+	min-width: 200px /*prevent of getting too small*/
+
+.ARTICLE img
+	width: 100% /*image size to 100% of parent class IMAGE*/
+
+.IMAGE-CAPTION
+	display: flex
+	align-items: center 
+	position: absolute /*position absolute in parent class IMAGE*/
+	bottom: 0 /*position at bottom of parent class IMAGE averlap the IMAGE*/
+	background-color: black
+	color: white
+	width: 100% /*width 100% of IMAGE*/
+	min-height: 60px /*prevent box to get too small*/
+	font-size: 0.5em
+	font-weight: bold
+
+.IMAGE-CAPTION p
+	padding-left: 0.5em /*move text in caption box a little to the right*/
+	font-size: 1.5em
+
+
+@import "media_query"
