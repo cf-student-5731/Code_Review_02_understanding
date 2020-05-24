@@ -1,0 +1,65 @@
+
+.BANNER_02
+	display: flex
+	justify-content: space-around /*centers the image in parent BODY*/
+	margin-top: 20px /*some space on top*/
+
+.BANNER_02 img
+	width: 90% /*width 90% of parent class BANNER_02*/
+	height: 100% /*height 100% of parent class BANNER_02*/
+
+.BANNER_01
+	width: 10% /*width 10% of parent class WRAPPER_small-news-block*/
+
+.BANNER_01 img
+	width: 100% /*width 100% of parent class BANNER_01*/
+	height: 100% /*height 100% of parent class BANNER_01*/
+
+.WRAPPER_small-news-block
+	display: flex /*container for SMALL-NEWS-BLOCK*/
+	margin-top: 10px /*add some free space on top*/
+	width: 100% /*width 100% of parent BODY*/
+
+.TEXT-LINE
+	display: flex
+	align-items: center /*align text vertically centered*/
+	color: #4C4C4C
+	background-color: #DDDDDD
+	height: 1.5em
+	font-size: 1.5em
+	padding-left: 0.5em /*move text a little to the right*/
+
+.SMALL-NEWS-BLOCK
+	width: 80% /*width 80% of parent*/
+	display: flex
+	flex-direction: column /*vertically align*/
+	justify-content: space-between /*space between top and bottom no space*/
+
+.SMALL-NEWS-LINE
+	display: flex
+	flex-direction: row /*horizontally align*/
+	justify-content: space-between /*space between left and right no space*/
+
+.ARTICLE
+	position: relative /*make it movable by flex*/
+	width: 30% /*width 30% of parent class ARTICLE*/
+	min-width: 200px /*prevent of getting too small*/
+
+.ARTICLE img
+	width: 100% /*image size to 100% of parent class IMAGE*/
+
+.IMAGE-CAPTION
+	display: flex
+	align-items: center 
+	position: absolute /*position absolute in parent class IMAGE*/
+	bottom: 0 /*position at bottom of parent class IMAGE averlap the IMAGE*/
+	background-color: black
+	color: white
+	width: 100% /*width 100% of IMAGE*/
+	min-height: 60px /*prevent box to get too small*/
+	font-size: 0.5em
+	font-weight: bold
+
+.IMAGE-CAPTION p
+	padding-left: 0.5em /*move text in caption box a little to the right*/
+	font-size: 1.5em
